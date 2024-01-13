@@ -1,0 +1,6 @@
+sources:
+  - PixelPanel.designspace
+axisOrder:
+  - ROND
+  - wght
+buildOTF: false
