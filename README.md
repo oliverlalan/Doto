@@ -6,8 +6,9 @@ The Pixel Panel font, a two axes variable font. One for the pixels' size. One fo
 
 ![Sample 2](documentation/samples/sample2.png)
 
-
 ## Axes
+
+TODO Add gifs
 
 ### Weight
 
@@ -18,3 +19,6 @@ The Pixel Panel font, a two axes variable font. One for the pixels' size. One fo
 - GF_Latin_Kernel
 - GF_Latin_Core
 
+## QA status
+
+[Google Fonts QA current status](<documentation/reports/2024-01-13 QA.md>)
