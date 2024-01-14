@@ -2,17 +2,9 @@ The Pixel Panel font, a two axes variable font. One for the pixels' size. One fo
 
 ## Samples
 
-![Sample 1](documentation/samples/sample1.png)
+![Specimen](documentation/samples/sample2.png)
 
-![Sample 2](documentation/samples/sample2.png)
-
-## Axes
-
-TODO Add gifs
-
-### Weight
-
-### Roundness
+![Variable](documentation/samples/sample4.jpg)
 
 ## Supported glyphsets
 

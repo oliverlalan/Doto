@@ -16,7 +16,7 @@ import argparse
 import os
 
 # Constants, these are the main "settings" for the image
-WIDTH, HEIGHT, MARGIN, FRAMES = 2048, 1024, 128, 1
+WIDTH, HEIGHT, MARGIN, FRAMES = 2048, 1500, 128, 1
 FONT_PATH = "fonts/ttf/PixelPanel-Black.ttf"
 FONT_LICENSE = "OFL v1.1"
 AUXILIARY_FONT = "Helvetica"
@@ -24,12 +24,13 @@ AUXILIARY_FONT_SIZE = 48
 
 LINE_ONE = "Pixel"
 LINE_TWO = "Panel"
-LINE_THREE = "font."
-BIG_TEXT_FONT_SIZE = 150
+BIG_TEXT_FONT_SIZE = 640
 BIG_TEXT_SIDE_MARGIN = MARGIN * 1
-BIG_TEXT_BOTTOM_MARGIN = MARGIN * 5.45
-
+BIG_TEXT_BOTTOM_MARGIN = MARGIN * 6
 GRID_VIEW = False # Toggle this for a grid overlay
+
+TEXT_COLOR = "#ff7800"
+BACKGROUND_COLOR = "#220a00"
 
 # Handel the "--output" flag
 # For example: $ python3 documentation/image1.py --output documentation/image1.png
@@ -43,7 +44,7 @@ args = parser.parse_args()
 ttFont = TTFont(FONT_PATH)
 
 # Constants that are worked out dynamically
-MY_URL = subprocess.check_output("git remote get-url origin", shell=True).decode()
+MY_URL = subprocess.check_output("git remote get-url PixelPanel", shell=True).decode()
 MY_HASH = subprocess.check_output("git rev-parse --short HEAD", shell=True).decode()
 FONT_NAME = ttFont["name"].getDebugName(4)
 FONT_VERSION = "v%s" % floatToFixedToStr(ttFont["head"].fontRevision, 16)
@@ -79,7 +80,7 @@ def remap(value, inputMin, inputMax, outputMin, outputMax):
 # Draw the page/frame and a grid if "GRID_VIEW" is set to "True"
 def draw_background():
     newPage(WIDTH, HEIGHT)
-    fill(0)
+    fill(*hex2rgb(BACKGROUND_COLOR))
     rect(-2, -2, WIDTH + 2, HEIGHT + 2)
     if GRID_VIEW:
         grid()
@@ -89,22 +90,21 @@ def draw_background():
 
 # Draw main text
 def draw_main_text():
-    fill(1)
+    fill(*hex2rgb(TEXT_COLOR))
     stroke(None)
     font(FONT_PATH)
     fontSize(BIG_TEXT_FONT_SIZE)
     # Adjust this line to center main text manually.
     # TODO: This should be done automatically when drawbot-skia
     # has support for textBox() and FormattedString
-    LEADING = 1.2
+    LEADING = 4
     text(LINE_ONE, (BIG_TEXT_SIDE_MARGIN, BIG_TEXT_BOTTOM_MARGIN))
     text(LINE_TWO, (BIG_TEXT_SIDE_MARGIN, BIG_TEXT_BOTTOM_MARGIN - (MARGIN * LEADING)))
-    text(LINE_THREE, (BIG_TEXT_SIDE_MARGIN, BIG_TEXT_BOTTOM_MARGIN - (MARGIN * (LEADING * 2))))
 
 
 # Divider lines
 def draw_divider_lines():
-    stroke(1)
+    stroke(*hex2rgb(TEXT_COLOR))
     strokeWidth(5)
     lineCap("round")
     line((MARGIN, HEIGHT - (MARGIN * 1.5)), (WIDTH - MARGIN, HEIGHT - (MARGIN * 1.5)))
@@ -130,6 +130,12 @@ def draw_auxiliary_text():
     text(FONT_VERSION, POS_TOP_RIGHT, align="right")
     text(URL_AND_HASH, POS_BOTTOM_LEFT, align="left")
     text(FONT_LICENSE, POS_BOTTOM_RIGHT, align="right")
+    
+def hex2rgb(hex):
+    h = hex.lstrip('#')
+    RGB = tuple(int(h[i:i+2], 16) for i in (0, 2 ,4))
+    r1, g1, b1 = RGB[0] / 255, RGB[1] / 255, RGB[2] / 255
+    return(r1, g1, b1)
 
 
 # Build and save the image

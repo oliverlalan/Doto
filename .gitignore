@@ -1,3 +1,4 @@
 *.code-workspace
 env
 requirements.txt
+scripts

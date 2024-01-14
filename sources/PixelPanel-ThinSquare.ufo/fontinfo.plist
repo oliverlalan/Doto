@@ -44,7 +44,7 @@
   </dict>
   </array>
   <key>openTypeHeadCreated</key>
-  <string>2024/01/13 00:12:41</string>
+  <string>2024/01/14 08:59:22</string>
   <key>openTypeHeadFlags</key>
   <array>
   </array>
@@ -58,10 +58,16 @@
   <integer>-0</integer>
   <key>openTypeNameDesigner</key>
   <string>Óliver Lalan</string>
+  <key>openTypeNameDesignerURL</key>
+  <string>www.oliverlalan.com</string>
   <key>openTypeNameLicense</key>
   <string>This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL</string>
   <key>openTypeNameLicenseURL</key>
-  <string>https://scripts.sil.org/OFL</string>
+  <string>https://openfontlicense.org</string>
+  <key>openTypeNameManufacturer</key>
+  <string>Óliver Lalan</string>
+  <key>openTypeNameManufacturerURL</key>
+  <string>www.oliverlalan.com</string>
   <key>openTypeNamePreferredFamilyName</key>
   <string>Pixel Panel</string>
   <key>openTypeNamePreferredSubfamilyName</key>

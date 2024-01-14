@@ -9,7 +9,7 @@
   </axis>
  </axes>
  <sources>
-  <source stylename="Black" familyname="Pixel Panel" name="BlackRound" filename="./PixelPanel-BlackSquare.ufo">
+  <source stylename="Black" familyname="Pixel Panel" name="BlackRound" filename="./PixelPanel-BlackRound.ufo">
    <location>
     <dimension name="weight" xvalue="900"/>
     <dimension name="roundness" xvalue="100"/>

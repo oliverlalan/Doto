@@ -28,6 +28,9 @@ BIG_TEXT_BOTTOM_MARGIN = MARGIN * 2
 
 GRID_VIEW = False # Toggle this for a grid overlay
 
+TEXT_COLOR = "#ff7800"
+BACKGROUND_COLOR = "#220a00"
+
 # Handel the "--output" flag
 # For example: $ python3 documentation/image1.py --output documentation/image1.png
 parser = argparse.ArgumentParser()
@@ -40,11 +43,16 @@ args = parser.parse_args()
 ttFont = TTFont(FONT_PATH)
 
 # Constants that are worked out dynamically
-MY_URL = subprocess.check_output("git remote get-url origin", shell=True).decode()
+MY_URL = subprocess.check_output("git remote get-url PixelPanel", shell=True).decode()
 MY_HASH = subprocess.check_output("git rev-parse --short HEAD", shell=True).decode()
 FONT_NAME = ttFont["name"].getDebugName(4)
 FONT_VERSION = "v%s" % floatToFixedToStr(ttFont["head"].fontRevision, 16)
 
+def hex2rgb(hex):
+    h = hex.lstrip('#')
+    RGB = tuple(int(h[i:i+2], 16) for i in (0, 2 ,4))
+    r1, g1, b1 = RGB[0] / 255, RGB[1] / 255, RGB[2] / 255
+    return(r1, g1, b1)
 
 # Draws a grid
 def grid():
@@ -76,7 +84,7 @@ def remap(value, inputMin, inputMax, outputMin, outputMax):
 # Draw the page/frame and a grid if "GRID_VIEW" is set to "True"
 def draw_background():
     newPage(WIDTH, HEIGHT)
-    fill(0)
+    fill(*hex2rgb(BACKGROUND_COLOR))
     rect(-2, -2, WIDTH + 2, HEIGHT + 2)
     if GRID_VIEW:
         grid()
@@ -86,7 +94,7 @@ def draw_background():
 
 # Draw main text
 def draw_main_text():
-    fill(1)
+    fill(*hex2rgb(TEXT_COLOR))
     stroke(None)
     font(FONT_PATH)
     fontSize(BIG_TEXT_FONT_SIZE)
@@ -99,7 +107,7 @@ def draw_main_text():
 
 # Divider lines
 def draw_divider_lines():
-    stroke(1)
+    stroke(*hex2rgb(TEXT_COLOR))
     strokeWidth(5)
     lineCap("round")
     line((MARGIN, HEIGHT - (MARGIN * 1.5)), (WIDTH - MARGIN, HEIGHT - (MARGIN * 1.5)))
