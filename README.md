@@ -13,6 +13,7 @@ The Pixel Panel font, a two axes variable font. One for the pixels' size. One fo
 
 ## Supported languages
 
+TODO
 
 ## QA status
 
@@ -21,3 +22,4 @@ The Pixel Panel font, a two axes variable font. One for the pixels' size. One fo
 
 ## Information
 
+TODO
