@@ -1,4 +1,5 @@
-The Pixel Panel font, a two axes variable font. One for the pixels' size. One for the pixels' roundness.
+Inpsired by the 80's computer interfaces,the Pixel Panel font is a 6x10 bitmap like font with two variable axes: one for the pixels' size, and one for the pixels' roundness.
+
 
 ## Samples
 
