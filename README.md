@@ -19,3 +19,9 @@ List of currently supported Google Fonts glyphsets:
 ## QA status
 
 [Google Fonts QA current status](<documentation/reports/2024-01-13 QA.md>)
+
+## Roadmap
+
+ - [ ] Color support
+ - [ ] Non-active pixels (binary axis)
+ - [ ] More languages
