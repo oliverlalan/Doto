@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="5.0">
+  <axes>
+    <axis tag="ROND" name="Roundness" minimum="0" maximum="100" default="0">
+      <map input="0" output="0"/>
+      <map input="67.5" output="50"/>
+      <map input="100" output="100"/>
+    </axis>
+    <axis tag="wght" name="Weight" minimum="100" maximum="900" default="900"/>
+  </axes>
+  <sources>
+    <source filename="Doto-ThinSquare.ufo" name="Doto-ThinSquare" familyname="Doto" stylename="ThinSquare">
+      <lib copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Roundness" xvalue="0"/>
+        <dimension name="Weight" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="Doto-BlackSquare.ufo" name="Doto-BlackSquare" familyname="Doto" stylename="BlackSquare">
+      <lib copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Roundness" xvalue="0"/>
+        <dimension name="Weight" xvalue="900"/>
+      </location>
+    </source>
+    <source filename="Doto-ThinRound.ufo" name="Doto-ThinRound" familyname="Doto" stylename="ThinRound">
+      <lib copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Roundness" xvalue="100"/>
+        <dimension name="Weight" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="Doto-BlackRound.ufo" name="Doto-BlackRound" familyname="Doto" stylename="BlackRound">
+      <lib copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Roundness" xvalue="100"/>
+        <dimension name="Weight" xvalue="900"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance name="Doto Thin" familyname="Doto" stylename="Thin" filename="Doto.ufo" stylemapfamilyname="Doto Thin" stylemapstylename="Thin">
+      <location>
+        <dimension name="Roundness" xvalue="0"/>
+        <dimension name="Weight" xvalue="100"/>
+      </location>
+    </instance>
+    <instance name="Doto ExtraLight" familyname="Doto" stylename="ExtraLight" filename="Doto.ufo" stylemapfamilyname="Doto ExtraLight" stylemapstylename="ExtraLight">
+      <location>
+        <dimension name="Roundness" xvalue="0"/>
+        <dimension name="Weight" xvalue="200"/>
+      </location>
+    </instance>
+    <instance name="Doto Light" familyname="Doto" stylename="Light" filename="Doto.ufo" stylemapfamilyname="Doto Light" stylemapstylename="Light">
+      <location>
+        <dimension name="Roundness" xvalue="0"/>
+        <dimension name="Weight" xvalue="300"/>
+      </location>
+    </instance>
+    <instance name="Doto Regular" familyname="Doto" stylename="Regular" filename="Doto.ufo" stylemapfamilyname="Doto Regular" stylemapstylename="Regular">
+      <location>
+        <dimension name="Roundness" xvalue="0"/>
+        <dimension name="Weight" xvalue="400"/>
+      </location>
+    </instance>
+    <instance name="Doto Medium" familyname="Doto" stylename="Medium" filename="Doto.ufo" stylemapfamilyname="Doto Medium" stylemapstylename="Medium">
+      <location>
+        <dimension name="Roundness" xvalue="0"/>
+        <dimension name="Weight" xvalue="500"/>
+      </location>
+    </instance>
+    <instance name="Doto SemiBold" familyname="Doto" stylename="SemiBold" filename="Doto.ufo" stylemapfamilyname="Doto SemiBold" stylemapstylename="SemiBold">
+      <location>
+        <dimension name="Roundness" xvalue="0"/>
+        <dimension name="Weight" xvalue="600"/>
+      </location>
+    </instance>
+    <instance name="Doto Bold" familyname="Doto" stylename="Bold" filename="Doto.ufo" stylemapfamilyname="Doto Bold" stylemapstylename="Bold">
+      <location>
+        <dimension name="Roundness" xvalue="0"/>
+        <dimension name="Weight" xvalue="700"/>
+      </location>
+    </instance>
+    <instance name="Doto ExtraBold" familyname="Doto" stylename="ExtraBold" filename="Doto.ufo" stylemapfamilyname="Doto ExtraBold" stylemapstylename="ExtraBold">
+      <location>
+        <dimension name="Roundness" xvalue="0"/>
+        <dimension name="Weight" xvalue="800"/>
+      </location>
+    </instance>
+    <instance name="Doto Black" familyname="Doto" stylename="Black" filename="Doto.ufo" stylemapfamilyname="Doto Black" stylemapstylename="Black">
+      <location>
+        <dimension name="Roundness" xvalue="0"/>
+        <dimension name="Weight" xvalue="900"/>
+      </location>
+    </instance>
+  </instances>
+</designspace>

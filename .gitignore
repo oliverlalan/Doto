@@ -1,4 +1,7 @@
 *.code-workspace
 env
+afdko_env
 requirements.txt
 scripts
+*.ninja_log
+build.ninja
