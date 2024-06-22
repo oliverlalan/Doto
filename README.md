@@ -1,8 +1,8 @@
 ## About
 
-The Pixel Panel font is a 6x10 bitmap-inspired font featuring two variable axes: One that controls the pixel size, and another one that controls the pixel roundness.
+Doto is a bit-map inspired, open-source, variable, monospace and geometric typeface family, designed for display purposes.
 
-Born from the struggle of finding the perfect font during the modeling of real-world items, the Pixel Panel font emerged as a solution that marries classic appeal with adaptability, making it the go-to choice for a variety of applications.
+Each glyph is built using a 6x10 reference matrix, and the typeface supports two variable axes: one controlling the size of the dots and another controlling the roundness of the dots.
 
 ## Samples
 
@@ -16,12 +16,9 @@ List of currently supported Google Fonts glyphsets:
 - GF_Latin_Kernel
 - GF_Latin_Core
 
-## QA status
-
-[Google Fonts QA current status](<documentation/reports/2024-01-13 QA.md>)
-
 ## Roadmap
 
  - [ ] Color support
- - [ ] Non-active pixels (binary axis)
+ - [ ] Off dots (color and opacity for the dots that are "off")
+ - [ ] Additional matrices
  - [ ] More languages
