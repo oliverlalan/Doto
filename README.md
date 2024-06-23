@@ -8,7 +8,7 @@ Each glyph is built using a 6x10 reference matrix, and the typeface supports two
 
 ![Cover](<documentation/samples/Doto - Cover.jpg>)
 
-![Demo](<documentation/samples/Doto - VF demo.mp4>)
+![Demo](<documentation/samples/Doto - Demo.mp4>)
 
 ![Support](<documentation/samples/Doto - Support.jpg>)
 
