@@ -6,9 +6,11 @@ Each glyph is built using a 6x10 reference matrix, and the typeface supports two
 
 ## Samples
 
-![VF demo](<documentation/samples/Pixel Panel - VF demo - low.gif>)
+![Cover](<documentation/samples/Doto - Cover.jpg>)
 
-![Specimen](documentation/samples/sample2.png)
+![Demo](<documentation/samples/Doto - VF demo.mp4>)
+
+![Support](<documentation/samples/Doto - Support.jpg>)
 
 ## Glyphsets
 
